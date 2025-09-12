@@ -7,11 +7,11 @@ public class Tokenizer
 
 	public Tokenizer(String expression)
 	{
-		this.expression = expression.replace("\\s+", "");
+		this.expression = expression.replaceAll("\\s+", "");
 		this.position = 0;
 	}
 
-	public Token nexToken()
+	public Token nextToken()
 	{
 		if (position >= expression.length())
 			return new Token(TokenType.EOF);
@@ -48,7 +48,7 @@ public class Tokenizer
 	{
 		StringBuilder number = new StringBuilder();
 
-		while (position <= expression.length())
+		while (position < expression.length())
 		{
 			char c = expression.charAt(position);
 			if (Character.isDigit(c) || c == '.')

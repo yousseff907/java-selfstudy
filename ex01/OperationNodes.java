@@ -16,7 +16,7 @@ class AddNode extends BinaryOpNode
 	@Override
 	public String toString()
 	{
-		return ("(" + left.toString() + " + " + right.toString() + ")");
+		return ("(" + left.toString() + "+" + right.toString() + ")");
 	}
 }
 
@@ -36,7 +36,7 @@ class SubtractNode extends BinaryOpNode
 	@Override
 	public String toString()
 	{
-		return ("(" + left.toString() + " - " + right.toString() + ")");
+		return ("(" + left.toString() + "-" + right.toString() + ")");
 	}
 }
 
@@ -57,7 +57,7 @@ class MultiplyNode extends BinaryOpNode
 	@Override
 	public String toString()
 	{
-		return ("(" + left.toString() + " * " + right.toString() + ")");
+		return ("(" + left.toString() + "*" + right.toString() + ")");
 	}
 }
 
@@ -81,6 +81,6 @@ class DivideNode extends BinaryOpNode
 	@Override
 	public String toString()
 	{
-		return ("(" + left.toString() + " / " + right.toString() + ")");
+		return ("(" + left.toString() + "/" + right.toString() + ")");
 	}
 }

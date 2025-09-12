@@ -8,7 +8,7 @@ public class Parser
 	public Parser(String expression)
 	{
 		this.tokenizer = new Tokenizer(expression);
-		this.currentToken = tokenizer.nexToken();
+		this.currentToken = tokenizer.nextToken();
 	}
 
 	public ASTNode parse()
@@ -59,6 +59,13 @@ public class Parser
 
 	private ASTNode parseFactor()
 	{
+		if (currentToken.type == TokenType.MINUS) 
+		{
+			consume(TokenType.MINUS);
+			ASTNode operand = parseFactor();
+			return new UnaryMinusNode(operand);
+		}
+
 		if (currentToken.type == TokenType.NUMBER)
 		{
 			double value;
@@ -84,7 +91,7 @@ public class Parser
 	private void consume(TokenType expectedType)
 	{
 		if (currentToken.type == expectedType)
-			currentToken = tokenizer.nexToken();
+			currentToken = tokenizer.nextToken();
 		else
 			throw new IllegalArgumentException("Expected " + expectedType + ", got: " + currentToken);
 	}
