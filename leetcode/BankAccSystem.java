@@ -111,6 +111,7 @@ class Bank
 		this.name = name;
 		this.accounts = new HashMap<>();
 	}
+
 	public void addToBank(String accountNumber, Account account)
 	{
 		if (accounts.containsKey(accountNumber))
