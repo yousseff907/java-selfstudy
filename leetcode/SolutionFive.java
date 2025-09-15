@@ -1,4 +1,4 @@
-import java.util.Stack;
+import java.util.*;
 
 /*
 Check if string has valid parentheses: (), [], {}
