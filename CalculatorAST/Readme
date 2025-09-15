@@ -1,0 +1,35 @@
+# Calculator AST
+
+A mathematical expression evaluator using Abstract Syntax Tree (AST) implementation.
+
+## Features
+
+- **Expression Parsing**: Converts mathematical expressions into AST nodes
+- **Tokenization**: Breaks down expressions into tokens (numbers, operators, parentheses)
+- **Binary Operations**: Supports addition, subtraction, multiplication, division
+- **Unary Operations**: Handles negative numbers
+- **Parentheses**: Proper handling of expression grouping
+- **Error Handling**: Division by zero detection and invalid expression handling
+
+## Components
+
+- `ASTNode.java` - Abstract base class for all AST nodes
+- `NumberNode.java` - Represents numeric values
+- `BinaryOpNode.java` - Base class for binary operations
+- `OperationNodes.java` - Concrete implementations (Add, Subtract, Multiply, Divide)
+- `UnaryMinusNode.java` - Handles negative numbers
+- `Token.java` - Represents tokens and token types
+- `Tokenizer.java` - Converts strings to tokens
+- `Parser.java` - Builds AST from tokens using recursive descent
+- `Calculator.java` - Main class that ties everything together
+
+## Usage
+
+```bash
+java Calculator "2 + 3 * (4 - 1)"
+# Output: Result: 11.0
+```
+
+## Architecture
+
+Uses the **Abstract Syntax Tree** pattern with recursive descent parsing to evaluate mathematical expressions with proper operator precedence.

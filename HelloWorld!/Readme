@@ -1,0 +1,31 @@
+# HelloWorld!
+
+A simple Java program demonstrating basic input/output operations and exception handling.
+
+## Features
+
+- **User Input**: Prompts user for their name using Scanner
+- **String Comparison**: Checks if input matches "CREED"
+- **Exception Handling**: Handles input exceptions gracefully
+- **Basic I/O**: Demonstrates console input/output operations
+
+## Components
+
+- `HelloWorld.java` - Main program with input validation and greeting
+
+## Usage
+
+```bash
+java HelloWorld
+# Prompts: "Whats your name?"
+# Input: CREED
+# Output: "correct!" followed by "hello world!"
+```
+
+## Concepts Demonstrated
+
+- Scanner usage for user input
+- Try-with-resources for automatic resource management
+- String comparison using `compareTo()`
+- Basic exception handling
+- Console I/O operations

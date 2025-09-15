@@ -1,0 +1,75 @@
+# Java Learning Repository
+
+A comprehensive collection of Java projects and coding exercises designed for technical interview preparation and skill development.
+
+## 🌟 Personal Journey
+
+When I started this repository, I had no prior experience with Java - my background was primarily in C and C++. These problem sets and projects served as my foundation for learning Java from scratch, helping me develop both fundamental programming skills and advanced object-oriented concepts. This collection represents my progression from a Java beginner to developing practical, interview-ready solutions.
+
+## Repository Structure
+
+### 📁 **CalculatorAST/**
+Advanced calculator implementation using Abstract Syntax Tree (AST) pattern. Demonstrates:
+- Recursive descent parsing
+- AST design pattern
+- Expression evaluation
+- Tokenization and lexical analysis
+
+### 📁 **HelloWorld!/**
+Basic Java program covering fundamental concepts:
+- Console I/O operations
+- Exception handling
+- String manipulation
+- Scanner usage
+
+### 📁 **leetcode-selfStudy/**
+Extensive collection of coding problems and solutions covering:
+- **Algorithms**: Binary search, two pointers, dynamic programming
+- **Data Structures**: Arrays, HashMaps, Stacks, Trees
+- **Object-Oriented Design**: Complete systems (Library, Banking, Employee management)
+- **String Processing**: Validation, parsing, transformation
+- **Mathematical Problems**: Financial calculations, optimization
+
+## 🎯 Purpose
+
+This repository serves as a comprehensive learning resource for Java development and technical interview preparation, covering four essential knowledge domains:
+
+1. **Language Basics** - Core Java concepts and syntax
+2. **Data Structures** - Implementation and manipulation
+3. **Object-Oriented Programming** - Design patterns and principles
+4. **Algorithms** - Problem-solving techniques and optimization
+
+## 🚀 Getting Started
+
+Each folder contains self-contained projects with their own README files. Most programs include:
+- Comprehensive test cases
+- Error handling
+- Performance considerations
+- Clean, documented code
+
+```bash
+# Compile and run any Java file
+javac filename.java
+java filename [arguments]
+```
+
+## 📚 Key Learning Areas
+
+- **Technical Interview Preparation**
+- **Algorithm Design and Analysis**
+- **Object-Oriented Design Principles**
+- **Data Structure Implementation**
+- **Java Best Practices**
+- **Problem-Solving Patterns**
+
+## 🏢 Applications
+
+This repository is ideal for:
+- **Technical Interview Preparation** - Industry-standard coding problems
+- **Computer Science Education** - Fundamental concepts and implementations  
+- **Professional Development** - Advanced Java patterns and best practices
+- **Coding Practice** - Regular problem-solving skill enhancement
+
+---
+
+*Each folder contains detailed documentation and examples. Start with any area that interests you or follow a structured learning path based on your current skill level.*
