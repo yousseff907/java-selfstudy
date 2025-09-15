@@ -147,7 +147,8 @@ class Bank
 
 public class BankAccSystem
 {
-	public static void showBalances(SavingsAccount savings, CheckingAccount checking) {
+	public static void showBalances(SavingsAccount savings, CheckingAccount checking)
+	{
 		System.out.println("Savings Balance: $" + savings.balance);
 		System.out.println("Checking Balance: $" + checking.balance);
 		System.out.println("---");
