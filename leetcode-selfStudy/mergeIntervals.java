@@ -25,9 +25,9 @@ public class mergeIntervals
 				list.remove(i + 1);
 				intervals = list.toArray(new int[list.size()][]);
 				len = intervals.length;
-				i--;
 			}
-			i++;
+			else
+				i++;
 		}
 		int	newIntervals[][] = list.toArray(new int[list.size()][]);
         return (newIntervals);

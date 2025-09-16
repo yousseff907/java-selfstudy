@@ -10,11 +10,28 @@ The longest valid subarray is of length 3: we can pick three 3's if they existed
 or pick 3,3,4 etc.
 */
 
+import java.util.*;
+
 public class PickingNumbers
 {
     public int pickingNumbers(int[] a)
 	{
-        // Your solution here
-        // Hint: Count frequency of each number, then check consecutive values
+		Map<Integer, Integer> map = new HashMap<>();
+
+		for (int n : a)
+		{
+			map.put(n, map.getOrDefault(n, 0) + 1);
+		}
+
+		int maxLen = 0;
+
+		for (int num : map.keySet())
+		{
+			int count = map.get(num);
+			int	countPlusOne = map.getOrDefault(num + 1, 0);
+			maxLen = Math.max(maxLen, count + countPlusOne);
+		}
+
+		return (maxLen);
     }
 }
