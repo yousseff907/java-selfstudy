@@ -8,13 +8,6 @@ When I started this repository, I had no prior experience with Java - my backgro
 
 ## Repository Structure
 
-### 📁 **CalculatorAST/**
-Advanced calculator implementation using Abstract Syntax Tree (AST) pattern. Demonstrates:
-- Recursive descent parsing
-- AST design pattern
-- Expression evaluation
-- Tokenization and lexical analysis
-
 ### 📁 **HelloWorld!/**
 Basic Java program covering fundamental concepts:
 - Console I/O operations
